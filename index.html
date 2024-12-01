@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            MY TEE STUDIO
+        </title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Code provided by Google Font api. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="/images/t-shirt.png">
+        <script src="js/formValidation.js"></script>
+    </head>
+    <body>
+        <header>
+            <a id='search' href="#">SEARCH...</a>
+            <nav>
+                <ul>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+            <a id='login' href="#">Log In</a>
+        </header>
+        <div id="header2">
+            <div id="gallery">
+            
+                <img src="images/charcoalTee.png" alt="man in charcoal shirt">
+                <img src="images/hstripesDice.png" alt="man in horizontal stripes with dice">
+                <img src="images/skullMicCasette.png" alt="man in white shirt with graphic pattern">
+                <img src="images/animals.png" alt="woman in animals shirt">
+                <img src="images/tatoosBeardPig.png" alt="bearded man with pig graphic">
+                <img src="images/whiteTee.png" alt="man in white tee">
+                <img src="images/pancakes.png" alt="woman in yellow tee with quote">
+            </div>
+            <div id="frontCenterTextWrapper">
+                <div id="frontCenterText">
+                    <h1>MY TEE STUDIO</h1>
+                    <div>
+                        <h2>YOUR DESIGNS, YOUR WAY</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div id="centerHeading">
+                <h3 id="orderShirtH3">ORDER SHIRT</h3>
+            </div>
+            <form id="shirtOrderForm">
+                <fieldset id="contactInfo">
+                    <label for="fname"> FIRST NAME</label>
+                    <input id="fname" name="fname" type="text">
+
+                    <label for="lname"> LAST NAME</label>
+                    <input id="lname" name="lname" type="text">
+        
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" placeholder="ME@MYTEESTUDIO.com">
+                </fieldset>
+                <fieldset id="imagePlacement">
+                    <legend>IMAGE PLACEMENT</legend>
+                    <div>
+                        <input id="front" name="checkboxlist" type="checkbox" value="4" >
+                        <label for="front">FRONT $4</label>
+                    </div>
+                    <div>
+                        <input id="back" name="checkboxlist" type="checkbox" value="5">
+                        <label for="back">BACK $5</label>
+                    </div>
+                    <div>
+                        <input id="sleeve" name="checkboxlist" type="checkbox" value="6">
+                        <label for="sleeve">SLEEVE $6</label>
+                    </div>
+                    
+                </fieldset>
+                <fieldset id="shirtSize">
+                    <legend>SIZE</legend>
+                    <div>
+                        <input type="radio" id="small" name="size" value="SMALL">
+                        <label for="small">SMALL</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size" value="MEDIUM" checked>
+                        <label for="medium">MEDIUM</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size" value="LARGE">
+                        <label for="large">LARGE</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="xlarge" name="size" value="X-LARGE">
+                        <label for="xlarge">X-LARGE</label>
+                    </div>
+                    
+                </fieldset>
+                <fieldset>
+                    <label for="tshirtPic">IMAGE UPLOAD</label>
+                    <input type="file" id="tshirtPic" name="tshirtPic" required>
+                </fieldset>
+                <fieldset id="dropdown">
+                    <label id="shirtColorLable" for="shirtColor"> SHIRT COLOR</label>
+                    <select id="shirtColor" name="shirtColor">
+                        <option value="RED">RED</option>
+                        <option value="ORANGE">ORANGE</option>
+                        <option value="YELLOW">YELLOW</option>
+                        <option value="GREEN">GREEN</option>
+                        <option value="BLUE">BLUE</option>
+                        <option value="BLACK">BLACK</option>
+                        <option value="WHITE">WHITE</option>
+                    </select>
+                </fieldset>
+                <fieldset id="numShirtField">
+                    <label id="numShirtLabel" for="numShirts"> NUMBER OF SHIRTS</label>
+                    <input type="number" id="numShirts" name="numShirt" min="1">
+                </fieldset>
+                <div id="buttons">
+                    <button type="submit" id="submitbtn">SUBMIT</button>
+                    <button type="reset" id="reset">RESET</button>
+                </div>
+            </form>
+            <p id="orderSummary"></p>
+        </main>
+        <footer>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebookIcon"></a>
+            <a href="https://www.tiktok.com/"><img src="images/tiktok.png" alt="tiktok icon"></a>
+            <a href="https://www.x.com"><img src="images/twitter.png" alt="x formerly twitter logo"></a>
+            <p>&copy; 2024 by MY TEE STUDIO. Created by Designs Unlimited.</p>
+        </footer>
+    </body>
+</html>
+<!-- I was inspired by this template.
+https://www.wix.com/website-template/view/html/1635?utm_source=google&utm_medium=cpc&utm_campaign=12188669214^122749788651^search%20-%20dsa&experiment_id=^^494823160027^&gad_source=1&gclid=Cj0KCQiA0fu5BhDQARIsAMXUBOJioMjCREWfgebKPa9fPilE20FSnrSIu_jjUMQy_Yaco6uIV_I2RfMaAs80EALw_wcB -->
